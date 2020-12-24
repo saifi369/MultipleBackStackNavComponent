@@ -21,7 +21,7 @@ class SettingsFragment : Fragment(R.layout.fragment_settings){
         }
 
         btn_about_app.setOnClickListener {
-            val action = MainNavGraphDirections.actionGlobalAboutAppFragment()
+            val action = SettingsFragmentDirections.actionSettingsFragmentToAboutAppFragment()
             findNavController().navigate(action)
         }
 
